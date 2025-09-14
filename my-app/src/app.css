@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url("/fonts/baijamjuree-regular-webfont.woff2") format("woff2"),
+      url("/fonts/baijamjuree-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Karantina";
+    src: url("/fonts/karantina-regular-webfont.woff2") format("woff2"),
+      url("/fonts/karantina-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-decoration: none;
+}
+  
+body {
+    --background: #000000;
+    --primary-text: #ffffff;
+    --secondary-text: #959595;
+    background: var(--background);
+    color: var(--secondary-text);
+    font-family: "Bai Jamjuree", sans-serif;
+}
+  
+
+strong {
+    font-weight: 1000;
+}
+
+a {
+    font-size: inherit;
+}
+
+.large {
+    font-size: 20vw;
+}
+  
+.medium {
+    font-size: clamp(2.25rem, 3.5vw, 3.375rem);
+}
+  
+.small {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+  
+.extra-small {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+  
