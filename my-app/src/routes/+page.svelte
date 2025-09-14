@@ -1,3 +1,9 @@
+<script>
+   let { data } = $props(); // rune die data doorgeeft tussen page.server.js en page.svelte ("magische property")
+
+
+    const member = data.members[0]; // We pakken de eerste naam uit de array
+</script>
     <picture class="img">
       <!-- AVIF voor moderne browsers -->
       <source 
