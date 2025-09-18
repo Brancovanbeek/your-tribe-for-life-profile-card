@@ -28,7 +28,7 @@
         src="/src/lib/assets/Branco-mugshot-700.png"
         alt="{member.name}"
         width="31.25rem" 
-        height="auto"
+        height="43.75rem"
         loading="lazy"
     /> <!-- 500px → 31.25rem -->
 </picture>
@@ -43,7 +43,7 @@
     img {
         width: 100%;
         height: auto;
-        max-width: 18.75rem; /* 300px → 18.75rem */
-        margin-top: -3rem;
+        max-width: 18.75rem;
+        transform: translateY(-3rem);
     }
 </style>

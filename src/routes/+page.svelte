@@ -11,15 +11,12 @@
 
     <h1 class="large">{member.name}</h1>
 
-    <!-- <section class="container"> -->
-
       <ResponsiveImg {member} class="mugshot-img"/>
 
       <section class="info-section-1">
         <h2 class="small">{member.bio}</h2>
         <p class="extra-small">Ik <strong>ontwerp</strong> en <strong>ontwikkel</strong> websites die er goed uitzien en gemakkelijk te gebruiken zijn. Daarbij focus ik op <strong>toegankelijkheid</strong> en <strong>snelheid</strong>, zodat iedereen de site zonder problemen kan gebruiken.</p>
       </section>
-    <!-- </section> -->
 
     <a class="circle-section-1-container" href="#section-2">
       <svg class="circle-section-1" width="173" height="173" viewBox="0 0 173 173" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +57,6 @@
           <path d="M111.966 63.4246C113.345 64.7988 113.345 67.0273 111.966 68.4015C110.587 69.7757 108.351 69.7757 106.972 68.4015L90.5307 52.0146L90.5307 129.481C90.5307 131.425 88.9499 133 87 133C85.0501 133 83.4693 131.425 83.4693 129.481L83.4693 52.0146L67.0277 68.4015C65.6488 69.7757 63.4129 69.7757 62.0341 68.4015C60.6553 67.0273 60.6553 64.7988 62.0341 63.4246L84.5037 41.0307C85.8825 39.6564 88.1175 39.6564 89.4963 41.0307L111.966 63.4246Z" fill="#959595"/>
       </svg>
       <span class="visually-hidden">Ga naar sectie 1</span>
-
     </a>
       
   </section>
@@ -86,8 +82,10 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+
     p{
-      max-width: 18.75rem; /* 300px → 18.75rem */
+      margin-top: 1rem;
+      max-width: 18.75rem;
     }
   }
 }
@@ -100,7 +98,7 @@
 }
 
 .social-media-svg{
-  width: clamp(3.125rem, 10vw, 25rem); /* 50px → 3.125rem, 400px → 25rem */
+  width: clamp(3.125rem, 10vw, 25rem);
   margin-left: auto;
   margin-right: auto;
 }
@@ -120,7 +118,7 @@
   }
 
   .info-section-2{
-    max-width: 28.75rem; /* 460px → 28.75rem */
+    max-width: 28.75rem;
   }
 
   .info-container-section-2{
@@ -162,7 +160,7 @@ h1{
   height: fit-content;
 }
 
-@media (min-width: 50rem) { /* 800px → 50rem */
+@media (min-width: 50rem) { /* 800px */
   .section-1{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -194,8 +192,10 @@ h1{
     position: relative;
 
     :global(img){
-      max-width: 37.5rem; /* 600px → 37.5rem */
-      margin-top: 10rem; /* 160px → 10rem */
+      max-width: 37.5rem; 
+      margin-top: 10rem;
+      max-height: 43.75rem;   
+      transform: translateY(0); 
     }
   }
 }
