@@ -1,5 +1,5 @@
 <script>
-    const {member} = $props();
+    const { member } = $props();
 </script>
 
 <picture class="mugshot-img">
@@ -27,20 +27,23 @@
     <img 
         src="/src/lib/assets/Branco-mugshot-700.png"
         alt="{member.name}"
-        width="320"
+        width="31.25rem" 
         height="auto"
         loading="lazy"
-    />
+    /> <!-- 500px → 31.25rem -->
 </picture>
 
 <style>
-    .mugshot-img{
-    z-index: 99;
-    position: absolute;
-    width: 100%;
-    max-width: 700px;
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-  }
+    .mugshot-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 18.75rem; /* 300px → 18.75rem */
+        margin-top: -3rem;
+    }
 </style>
