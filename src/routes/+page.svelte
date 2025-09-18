@@ -43,10 +43,10 @@
     </section>
 
     <div class="social-media-container">
-      <img class="social-media-svg" src="/src/lib/assets/github.svg" alt="github logo" width="100" height="100" />
-      <img class="social-media-svg" src="/src/lib/assets/instagram.svg" alt="instagram logo" width="100" height="100" />
-      <img class="social-media-svg" src="/src/lib/assets/linkedin.svg" alt="linkedin logo" width="100" height="100" />
-      <img class="social-media-svg" src="/src/lib/assets/mail.svg" alt="mail logo" width="100" height="100" />
+      <img class="social-media-svg" src="/assets/github.svg" alt="github logo" width="100" height="100" />
+      <img class="social-media-svg" src="/assets/instagram.svg" alt="instagram logo" width="100" height="100" />
+      <img class="social-media-svg" src="/assets/linkedin.svg" alt="linkedin logo" width="100" height="100" />
+      <img class="social-media-svg" src="/assets/mail.svg" alt="mail logo" width="100" height="100" />
     </div>
 
     <a href="#section-1">
