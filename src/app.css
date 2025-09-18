@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Bai Jamjuree";
     src: url("/fonts/baijamjuree-regular-webfont.woff2") format("woff2"),
-      url("/fonts/baijamjuree-regular-webfont.woff") format("woff");
+         url("/fonts/baijamjuree-regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -10,13 +10,13 @@
 @font-face {
     font-family: "Karantina";
     src: url("/fonts/karantina-regular-webfont.woff2") format("woff2"),
-      url("/fonts/karantina-regular-webfont.woff") format("woff");
+         url("/fonts/karantina-regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
   
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,6 +25,10 @@
     font-size: 1rem;
     line-height: 1.2;
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
   
 body {
@@ -37,7 +41,7 @@ body {
 } 
 
 strong {
-   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+   color: #cfcfcf;
 }
 
 a {
@@ -59,12 +63,23 @@ a {
 }
   
 .small {
-    font-size: clamp(22px, 2.5vw, 20px);
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px → 1rem, 20px → 1.25rem */
     color: var(--primary-text);
     text-transform: uppercase;
 }
   
 .extra-small {
-    font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(1rem, 2vw, 1.125rem); /* 16px → 1rem, 18px → 1.125rem */
 }
-  
+
+.visually-hidden {
+    position: absolute;
+    width: 0.0625rem;   /* 1px */
+    height: 0.0625rem;  /* 1px */
+    padding: 0;
+    margin: -0.0625rem; /* -1px */
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
